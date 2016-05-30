@@ -136,7 +136,7 @@ module Octopress
           page.site.posts.reverse
         end
       else
-        page.site.collections[page['paginate']['collection']].docs
+        page.site.collections[page['paginate']['collection']].docs.reverse
       end
 
       if categories = page.data['paginate']['categories']
